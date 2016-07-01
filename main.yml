@@ -9,10 +9,9 @@
         - clc
 
 - name: Install IIS
-  hosts: win_servers
+  hosts: windows_web_servers
   gather_facts: True
   roles:
     - role: IIS
       tags:
-        - win_web
-        
+        - windows_web
